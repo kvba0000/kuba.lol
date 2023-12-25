@@ -34,6 +34,7 @@ const waitFor = async (o) => new Promise((rs,re) => {
 
 
 const DVD_SS = class {
+    isLoaded = false
     size = {
         h: 260,
         w: 320
@@ -48,11 +49,7 @@ const DVD_SS = class {
     window = null;
 
     constructor(autoStart = true){
-        if(autoStart) this.start();
-    }
-
-    async start() {
-        this.load();
+        if(autoStart) this.load();
     }
 
     async load() {
@@ -63,7 +60,9 @@ const DVD_SS = class {
     }
 
     startMoving() {
-        this.window.postMessage(['sendInitialData', {xx:this.xx, yy:this.yy, pos: this.pos, size: this.size, JUMPER, FREQ, DEAD_ZONE, screenSize}])
+        this.window.addEventListener("message", ({data}) => {
+            if(data.event === "ready") this.window.postMessage(['sendInitialData', {xx:this.xx, yy:this.yy, pos: this.pos, size: this.size, JUMPER, FREQ, DEAD_ZONE, screenSize}])
+        })
     }
 
 }

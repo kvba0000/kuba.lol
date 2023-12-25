@@ -122,7 +122,7 @@ window.WindowClass = class {
     }
 }
 
-const NotepadWindowClass = class extends WindowClass {
+window.NotepadWindowClass = class extends WindowClass {
     constructor(text = "", fileName = "Untitled") {
         super(null, `${fileName} - Notepad`, true, true)
 
