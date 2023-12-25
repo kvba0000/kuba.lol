@@ -11,13 +11,13 @@ window.addEventListener('click', () => interactedWithWebsite = true, {once: true
 
 */
 window.addEventListener("error", (err) => {
-    const url = `https://github.com/kbvivi/kbvivi/issues/new?title=${encodeURIComponent(`Error in ${new URL(err.filename).pathname}`)}&body=${encodeURIComponent(`When I was <replace this section with what were you doing before> I got an error on ${err.filename} at line ${err.lineno} in column ${err.colno}:\n\n\`\`\`\n${err.message}\n\`\`\``)}`
+    const url = `https://github.com/kbvivi/kuba.lol/issues/new?title=${encodeURIComponent(`Error in ${new URL(err.filename).pathname}`)}&body=${encodeURIComponent(`When I was <replace this section with what were you doing before> I got an error on ${err.filename} at line ${err.lineno} in column ${err.colno}:\n\n\`\`\`\n${err.message}\n\`\`\``)}`
     if (confirm([
         "There was an error when executing this operation:",
         "",
         `"${err.message}" at ${err.lineno}:${err.colno} (${new URL(err.filename).pathname})`,
         "",
-        "Please report it ASAP to me at https://github.com/kbvivi/kbvivi/issues!",
+        "Please report it ASAP to me at https://github.com/kbvivi/kuba.lol/issues!",
         "Do you want to automatically go to the issues page?"
     ].join("\n"))) interactedWithWebsite ? window.open(url, "_blank") : location.href = url;
 })
@@ -70,7 +70,7 @@ if(!devtools_aknowledged){
             let aknowledged = confirm([
                 "I see you wanted to open dev tools!",
                 "If you want to check out the code or even grab some then go ahead!",
-                "https://github.com/kbvivi/kbvivi/tree/main/web",
+                "https://github.com/kbvivi/kuba.lol/",
                 "",
                 "Please just credit me in your project as I spent much of my time on this, it would mean a lot to me. <3",
                 "(Confirm to never see this message again)"
