@@ -42,6 +42,10 @@ Close Icon by Vlad Cristea: https://www.svgrepo.com/svg/522506/close
 Night Moon by SVG Repo: https://www.svgrepo.com/svg/279723/night-moon
 Notepad by flat-icon-design: https://www.svgrepo.com/svg/484546/notepad
 Settings by Catalin Fertu: https://www.svgrepo.com/svg/522270/settings
+User by Solar Icons: https://www.svgrepo.com/svg/525592/user
+Pin by instructure-ui: https://www.svgrepo.com/svg/501306/pin
+Smiley Square Face by SVG Repo: https://www.svgrepo.com/svg/121182/smiley-square-face
+Send by SVG Repo: https://www.svgrepo.com/svg/240154/send
 
 |1Logos:
 

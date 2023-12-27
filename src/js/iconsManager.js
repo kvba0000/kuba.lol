@@ -18,7 +18,8 @@ ICONSMANAGER.list = [
     ["OneShot", ICONSMANAGER.links.icon('oneshot', 'png'), SECRETS.ONESHOT.iconTrigger],
     ["Omori", ICONSMANAGER.links.icon('omori', 'png'), SECRETS.OMORI.iconTrigger],
     ["Undertale", ICONSMANAGER.links.icon('undertale', 'png'), SECRETS.UNDERTALE.iconTrigger],
-    ["DVD Screensaver", ICONSMANAGER.links.icon('DVD_logo_white', 'svg'), "/dvd/"]
+    ["DVD Screensaver", ICONSMANAGER.links.icon('DVD_logo_white', 'svg'), "/dvd/"],
+    ["New Year Countdown", ICONSMANAGER.links.icon('clock', 'svg'), "/newYear/"],
 ]   
 
 ICONSMANAGER.update = () => {

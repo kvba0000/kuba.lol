@@ -22,6 +22,7 @@ export default defineConfig(() => {
                     win_social: path.resolve(__dirname, "src/window_contents/win_social.html"),
                     dvd_main: path.resolve(__dirname, "src/dvd/index.html"),
                     dvd_popup: path.resolve(__dirname, "src/dvd/dvd.html"),
+                    newYear: path.resolve(__dirname, "src/newYear/index.html"),
                 },
             }
         },

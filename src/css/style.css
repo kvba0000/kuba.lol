@@ -539,7 +539,7 @@ div#win-icons > div.win-icon {
     box-sizing: border-box;
     text-align: center;
     position: relative;
-    height: 90px;
+    min-height: 100px;
     width: 130px;
     margin: 5px;
 }
@@ -553,6 +553,7 @@ div.win-icon > img.win-icon-icon {
 }
 
 div.win-icon > span.win-icon-name {
+    font-size: 0.9em;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);

@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>New Year Countdown</title>
+        <meta charset="utf-8">
+        <meta property="og:title" content="New Year Countdown" />
+        <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no">
+        <meta property="og:image" content="https://kuba.lol/img/dvd.png" />
+        <meta property="og:url" content="https://kuba.lol/newYear/" />
+        <meta property="og:site_name" content="kuba.lol" />
+        <meta property="og:description" 
+            content="Countdown to New Year + chat! Talk with others while waiting on new year to come and see what happens! Have fun!" />
+        <meta name="theme-color" media="(prefers-color-scheme: light)" content="red" />
+        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black" />
+        <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+        <link href="/newYear/css/style.css" rel="stylesheet" />
+        <link href="/newYear/css/firework.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="captchaScreen">
+            <div id="captcha-info">
+                <div id="captcha-title">Fill the captcha</div>
+                <span id="captcha-text">to join chat...</span>
+            </div>
+            <div id="captcha-container"></div>
+        </div>
+        <div id="countdown-container">
+            <div id="countdown">Click anywhere to show...</div>
+            <div id="spotify-song">
+                <div></div>
+            </div>
+        </div>
+        <div id="chat">
+            <div id="chat-title">
+                Chat (<span id="chat-users"></span>)
+                <button class="chat-btn" id="chat-pin" title="Pin Chat"><img src="/img/pin.svg" /></button>
+            </div>
+            <div id="chat-input-container">
+                <input id="chat-input" placeholder="[You need to connect to start chatting.]" disabled />
+                <button class="chat-btn" id="chat-emoji" title="Emoji Picker"><img src="/img/smiley.svg" /></button>
+                <button class="chat-btn" id="chat-send" title="Send Message" disabled><img src="/img/send.svg" /></button>
+                <button class="chat-btn" id="chat-username" title="Change Username" disabled><img src="/img/user.svg" /></button>
+
+                <emoji-picker id="chat-emoji-picker" class="dark"></emoji-picker>
+            </div>
+            <div id="chat-messages"></div>
+        </div>
+        <div id="fireworks">
+            <div class="firework"></div>
+            <div class="firework"></div>
+            <div class="firework"></div>
+        </div>
+        <script src="/newYear/js/countdown.js" type="module"></script>
+        <script type="module" src="https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.js"></script>
+        <script defer src="https://open.spotify.com/embed/iframe-api/v1"></script>
+        <script defer type="module">window.recaptchaReady=false;window.onGoogleCaptchaLoad=()=>window.recaptchaReady=true</script>
+        <script src="https://www.google.com/recaptcha/api.js?onload=onGoogleCaptchaLoad&render=explicit" defer></script>
+    </body>
+</html>
