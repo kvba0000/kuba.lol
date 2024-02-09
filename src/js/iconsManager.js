@@ -14,7 +14,6 @@ ICONSMANAGER.list = [
     ["licenses.txt", null, showLicences],
     ["GitHub", ICONSMANAGER.links.icon('github-white', 'svg'), ICONSMANAGER.links.social("github")],
     ["YouTube", ICONSMANAGER.links.icon('youtube_red_64px', 'png'), ICONSMANAGER.links.social("youtube")],
-    ["Mastodon", ICONSMANAGER.links.icon('mastodon-purple', 'svg'), ICONSMANAGER.links.social("mastodon")],
     ["OneShot", ICONSMANAGER.links.icon('oneshot', 'png'), SECRETS.ONESHOT.iconTrigger],
     ["Omori", ICONSMANAGER.links.icon('omori', 'png'), SECRETS.OMORI.iconTrigger],
     ["Undertale", ICONSMANAGER.links.icon('undertale', 'png'), SECRETS.UNDERTALE.iconTrigger],
