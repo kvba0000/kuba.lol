@@ -3,7 +3,7 @@ window.STARTMENUMANAGER = {}
 STARTMENUMANAGER.links = {}
 STARTMENUMANAGER.links.build = (link, params = {}) => `${link}?${Object.entries(params).map(p=>`${p[0]}=${encodeURIComponent(p[1])}`).join("&")}`
 
-STARTMENUMANAGER.getKbMessage = () => isChristmasTime() ? "Merry Christmas! <3 ~kb" : (Math.random()>0.01 ? "by kb with <3" : [
+STARTMENUMANAGER.getKvbaMessage = () => isChristmasTime() ? "Merry Christmas! <3 ~kvba" : (Math.random()>0.01 ? "by kvba with <3" : [
     "It's always good to feel loved, but it's not always lovely to feel good.",
     "Sometimes, you have to just stop... and think about everything you do in your life...",
     "Maybe it is something you like for example reading a good book, or playing a favorite video game...",
@@ -13,17 +13,16 @@ STARTMENUMANAGER.getKbMessage = () => isChristmasTime() ? "Merry Christmas! <3 ~
     "If you're the one that has a luck to get this message without looking to code. Congrats. You found my real reason why I'm always online...",
     "Problems are near us all the time... but you cannot just pretend all the time like they are not here.",
     "",
-    "~ kb 2023"
+    "~ kvba 2023"
 ].join("\n"))
 
 STARTMENUMANAGER.list = [
-    ["kb", () => {alert(STARTMENUMANAGER.getKbMessage()); return true}],
+    ["kvba", () => {alert(STARTMENUMANAGER.getKvbaMessage()); return true}],
     null,
     ["Share on Twitter!", () => window.open(STARTMENUMANAGER.links.build("https://twitter.com/intent/tweet", {
         url: "https://kuba.lol",
         text: `By the way! Have you heard about kuba.lol? It's so cool! Check it out! :D`
     }), "_blank")],
-    ["Support me on Ko-fi!", () => window.open('https://ko-fi.com/kbvivi', '_blank')],
     ["This PC", '/'],
     null,
     ["Settings", () => {new SettingsWindowClass(); return true}]
