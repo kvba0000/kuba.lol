@@ -45,12 +45,9 @@
             }
             const contents = new Map();
             Object.entries({
-                youtube: () => create_iframe("https://www.youtube.com/embed?listType=playlist&list=UULFR92GYi7RW7V99FiHZ6nbyg&color=white&enablejsapi=1&fs=0&rel=0&autoplay=1"),
-                mastodon: () => create_img("assets/mastodon_ss.png", "https://101010.pl/@kb"),
+                youtube: () => create_iframe("https://www.youtube.com/embed?listType=playlist&list=UUYixYp1hL88jvEm-ntEwERA&color=white&enablejsapi=1&fs=0&rel=0&autoplay=1"),
                 reddit: () => create_img('assets/reddit_ss.png', "https://www.reddit.com/user/Affectionate_Sea3502"),
-                github: () => create_img('assets/github_ss.png', "https://github.com/kbvivi"),
-                instagram: () => create_iframe("https://www.instagram.com/kbvivj/embed"),
-                tiktok: () => create_iframe("https://www.tiktok.com/embed/@kbvivj")
+                github: () => create_img('assets/github_ss.png', "https://github.com/kvbaxi"),
             }).forEach(c => contents.set(c[0], c[1]))
 
             const params = new URLSearchParams(location.search)
