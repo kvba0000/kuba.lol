@@ -1,4 +1,10 @@
-# 🌐 kuba.lol
+# 🌐 kuba.lol (OLD)
+> [!WARNING]
+> This version is the old version of my website, the new one which is on my domain [kuba.lol](https://kuba.lol) is not open source! I'm planning on putting it open source once it will be done. I'm sorry for waiting.
+
+> [!IMPORTANT]
+> I'll be posting security updates and module updates as long as I'll be able to. I like the idea of this site so I'll rewrite it someday.
+> 
 [kuba.lol](https://kuba.lol) is my personal website with many awesome features. It has HUGE amount of references to other titles (and there will be even more later in time), HUGE amount of secrets and I'm going to keep this site updated as long as I possibly can!
 ## ⚙ Dependencies
 - [Node.js](https://nodejs.org/en/download/) (Tested on v20.9.0+)
